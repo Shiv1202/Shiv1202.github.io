@@ -1,0 +1,43 @@
+.accordion {
+  border: 1px solid #242323;
+  background-color: #242323;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.accordion p {
+  padding-top: 20px;
+}
+
+.accordion h4 {
+  color: #fff;
+  display: inline;
+  font-size: 20px;
+  margin: 0;
+}
+
+.accordion .accordion-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+}
+
+.accordion .accordion-title.active .accordion-arrow {
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+}
+
+.accordion .accordion-text {
+  display: none;
+  color: #fff;
+}
+/*# sourceMappingURL=accordion.css.map */
