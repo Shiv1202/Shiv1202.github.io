@@ -8,8 +8,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/fontawesome.min.css" integrity="sha512-8jdwayz5n8F2cnW26l9vpV6+yGOcRAqz6HTu+DQ3FtVIAts2gTdlFZOGpYhvBMXkWEgxPN3Y22UWyZXuDowNLA==" crossorigin="anonymous" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link rel = "stylesheet" type = "text/css" href = "css/style.css">
-    <link rel = "stylesheet" href = "css/accordion.css">
+    <link rel = "stylesheet" type = "text/css" href = "/css/style.css">
+    <link rel = "stylesheet" type="text/css" href = "/css/accordion.css">
     
     <link id="theme-style" rel="stylesheet" type="text/css" href="">
     <title>Shivansh Tiwari</title>
@@ -40,10 +40,10 @@
                     <h5 style="text-align: center; line-height: 0;">Choose Your Theme</h5>
 
                     <div id="theme-option-wrapper">
-                        <div id="light-mode" class="theme-dot"></div>
-                        <div id="blue-mode" class="theme-dot"></div>
-                        <div id="green-mode" class="theme-dot"></div>
-                        <div id="orange-mode" class="theme-dot"></div>  
+                        <div data-mode="light" id="light-mode" class="theme-dot"></div>
+                        <div data-mode="blue" id="blue-mode" class="theme-dot"></div>
+                        <div data-mode="green" id="green-mode" class="theme-dot"></div>
+                        <div data-mode="orange" id="orange-mode" class="theme-dot"></div>  
                     </div>
                     <p id="settings-note">*Theme settings will be saved for <br>yout next visit</p>
                 </div>
@@ -215,6 +215,7 @@
                         <h4 class="secondary">Programming language</h4>
                     </div>
                     <div class="accordion-text">
+                        <hr>
                         <ul class="list">
                             <li>C/C++</li>
                             <li>Core Java</li>
@@ -228,6 +229,7 @@
                         <h4 class="secondary">Frameworks</h4>
                     </div>
                     <div class="accordion-text">
+                        <hr>
                         <ul class="list">
                             <li>SCSS</li>
                             <li>Bootstrap</li>
@@ -243,6 +245,7 @@
                         <h4 class="secondary">Concepts</h4>
                     </div>
                     <div class="accordion-text">
+                        <hr>
                         <ul class="list">
                             <li>Data Structure</li>
                             <li>Algorithms</li>
