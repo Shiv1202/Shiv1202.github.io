@@ -24,3 +24,4 @@ $(document).ready(function() {
      accordionTitle.first().click();
     }
  });
+

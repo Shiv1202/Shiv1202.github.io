@@ -1,6 +1,10 @@
+:root{
+  --buttonColor:black;
+}
+
 .accordion {
     border: 1px solid #242323;
-    background-color: #242323;
+    background-color: var(--buttonColor);
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 15px;
