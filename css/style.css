@@ -16,6 +16,9 @@
 
     --buttonColor: black;
     --textShadow: 0 2px 5px rgba(0, 0, 0,0.5);
+
+    --sideNavColor: #111;
+    --sideNavLinkColor: #b8b3b3;
 }
 
 
@@ -209,6 +212,7 @@ h6{ font-size: 16px;}
 }
 #preview-shadow{
     background-color: var(--previewShadow);
+    margin: 0 auto;
     width: 300px;
     height: 180px;
     padding-left: 30px;
@@ -259,6 +263,7 @@ h6{ font-size: 16px;}
 .social-links-wrapper{
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
     margin-top: 100px;
 }
 
@@ -294,10 +299,10 @@ h6{ font-size: 16px;}
 
 .about-wrapper{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     padding-bottom: 50px;
     padding-top: 25px;
-    gap: 70px;
+    row-gap: 70px;
     overflow: auto;
 }
 #content{
@@ -351,22 +356,21 @@ h6{ font-size: 16px;}
 }
 
 button{
-    width: 100%;
+    width: 70%;
     background: var(--mainColor);
     border: ipx solid var(--borderColor);
-    height: 40px;
-    margin-top: 2px;
+    height: 60px;
     font-family: 'Roboto Mono', monospace;
     font-weight: 490;
     font-size: 18px;
     -weblit-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 75);
     -moz-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 75);
-    box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 75);
+    box-shadow: -1px 1px 3px -1px rgb(0 0 0);
 }
 
 .post-wrapper{
     display: grid;
-    grid-template-columns: repeat(auto-fit, 320px);
+    grid-template-columns: repeat(auto-fit, 300px);
     gap: 30px;
     justify-content: center;
     padding-bottom: 50px;
@@ -383,6 +387,7 @@ button{
     display: block;
     padding: 10px;
     width: -webkit-fill-available;
+    width:  -moz-available;
     height: 180px;
     object-fit: contain;
 }
@@ -485,15 +490,14 @@ button{
 
 }
 .single-link-f a img:hover{
-    transition: cubic-bezier(0.68, -0.55, 0.265, 1.55);
     margin-left: 10px;
 }
 
 .up-btn a{
     position: fixed;
     text-decoration: none;
-    bottom: 40px;
-    right: 50px;
+    bottom: 0.5em;
+    right: 1em;
 }
 
 .up-btn img{
@@ -501,10 +505,70 @@ button{
     height: 50px;
 }
 
+.hamburger{
+    display: none;
+}
+.sidenav {
+    width: 0;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: var(--sideNavColor);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 3em;
+}
+
+.sidenav a
+{
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: var(--sideNavLinkColor);
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover
+{
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn 
+{
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
 
 @media screen and (max-width: 1200px){
     .main-container{
         width: 95%;
+    }
+    .single-link-f a img, .single-link a img{ 
+        margin: 0 auto;
+        width: 30px;
+        height: 30px;
+    }
+    button{
+        display: block;
+        margin: 0 auto;
+    }
+    #profile-pic{
+        width: 18em;
+    }
+    #about-pic-shadow, #preview-shadow {
+        width: 250px;
+        padding-left: 20px;
+        padding-top: 20px;
+    }
+    .about-pic,#profile-pic-me ,#preview{
+        box-sizing: border-box;
+        width: 250px;
     }
 }
 
@@ -524,4 +588,14 @@ button{
         overflow: auto;
     }
 }
-
+@media screen and (max-width: 600px) {
+    .menu 
+    {
+        display: none;
+    }
+    .hamburger
+    {
+        display: inline-flex;
+        flex-basis: 20%;
+    }
+}
