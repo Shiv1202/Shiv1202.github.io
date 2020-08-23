@@ -17,7 +17,7 @@
 <body>
     <section class="s1">
         
-        <div class="main-container">
+        <div id="top" class="main-container">
             <div class="greeting-wrapper">
                 <h1 id = "name">Hi, I'm Shivansh Tiwari</h1>
             </div>
@@ -30,9 +30,9 @@
                     </div>
                     <ul id="navigation">
                         <li><a href="#about-me">About Me</a></li>
-                        <li><a href="#">Project</a></li>
-                        <li><a href="#">Skills</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#project">Project</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="left-column">
@@ -55,7 +55,7 @@
                             <h3>What I Do</h3>
                             <h6>I'm a
                                 <br>
-                                <span id='demo'>Programmer</span></h6>
+                                <span id='demo'></span></h6>
                                 <div id="corner-br" class="corner"></div>
                                 <div id="corner-bl" class="corner"></div>
                         </div>
@@ -69,24 +69,24 @@
                         </div>
 
                         <div class="single-link">
-                            <a href="https://www.instagram.com/productive_sst/">
+                            <a target="_blank" href="https://www.instagram.com/productive_sst/">
                                 <img src="images/instagram.png" alt="">
                             </a>
                         </div>
 
                         <div class="single-link">
-                            <a href="MAILTO:shivansht1202@email.com">
+                            <a target="_blank" href="MAILTO:shivansht1202@email.com">
                                 <img src="images/mail.png" alt="" >
                             </a>
                         </div>
 
                         <div class="single-link">
-                            <a href="https://www.linkedin.com/in/shiv1202/">
+                            <a target="_blank" href="https://www.linkedin.com/in/shiv1202/">
                                 <img src="images/linkedin.png" alt="" >
                             </a>
                         </div>
                         <div class="single-link">
-                            <a href="https://www.linkedin.com/in/shiv1202/">
+                            <a target="_blank" href="https://leetcode.com/shiv1202/">
                                 <img src="images/cib-leetcode.svg" alt="" >
                             </a>
                         </div>
@@ -136,7 +136,7 @@
     <section class="s1">
         <div class="main-container">
             <h3 style="text-align: center;">Some of my past/ongoing projects</h3>
-            <div class="post-wrapper">
+            <div id="project" class="post-wrapper">
 
                 <div class="post">
                     <img class="thumbnail" src="images/API.gif" alt="">
@@ -210,11 +210,9 @@
     </section>
     
     <section class="s2">
-        <div class="main-container">
+        <div id="skills" class="main-container">
             <h3 style="text-align: center;">Skills</h3>
-            <!-- <div class="skills"> -->
-
-                
+             
                 <div class="accordion">
                     <div class="accordion-title">
                         <h4 class="secondary">Programming language</h4>
@@ -260,13 +258,11 @@
                         </ul>
                     </div>
                 </div>
-                
 
-            <!-- </div> -->
         </div>
     </section>
     <section class="s1">
-        <div class="main-container">
+        <div id="contact" class="main-container">
             <h3 style="text-align: center;">Get In Touch</h3>
             <form id = "contact-form" action="" target="_blank">
                 <label>Name</label>
@@ -287,6 +283,56 @@
         </div>
     </section>
 
+    <section class="s2">
+        <div class="main-container">
+            <h3 style="text-align: center;">Connect with me</h3>
+            <div class="footer-icon">
+                <div class="social-links-wrapper-f">
+                    <div class="single-link-f">
+                        <a href="https://github.com/Shiv1202/">
+                            <img src="images/github.png" alt="">
+                        </a>
+                    </div>
+    
+                    <div class="single-link-f">
+                        <a target="_blank" href="https://www.instagram.com/productive_sst/">
+                            <img src="images/instagram.png" alt="">
+                        </a>
+                    </div>
+    
+                    <div class="single-link-f">
+                        <a target="_blank" href="MAILTO:shivansht1202@email.com">
+                            <img src="images/mail.png" alt="" >
+                        </a>
+                    </div>
+    
+                    <div class="single-link-f">
+                        <a target="_blank" href="https://www.linkedin.com/in/shiv1202/">
+                            <img src="images/linkedin.png" alt="" >
+                        </a>
+                    </div>
+                    <div class="single-link-f">
+                        <a target="_blank" href="https://leetcode.com/shiv1202/">
+                            <img src="images/cib-leetcode.svg" alt="" >
+                        </a>
+                    </div>
+    
+                </div>
+            </div>
+            <div style="text-align: center;">
+                <h6>Made &hearts; by Shivansh Tiwari</h6>
+            </div>
+
+            <div class="up-btn">
+                <a href="#top"><img src="images/up-arrow.png" alt=""></a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- JavaScrip Files -->
+
+    <script type="text/javascript" src="js/typed.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
     <script src="js/accordion.js"></script>
 </body>

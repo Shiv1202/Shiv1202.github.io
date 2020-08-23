@@ -38,3 +38,25 @@ function setTheme(mode){
 
 	localStorage.setItem('theme', mode)
 }
+
+var typed = new Typed("#demo", {
+    strings: [
+        "Learner",
+        "Software Developer",
+        "Programmer"
+    ],
+    fadeOut: true,
+    typeSpeed: 70,
+    backSpeed: 70,
+    loop: true
+})
+// var typed1 = new Typed("#name", {
+//     strings: [
+//         "Hello, World!",
+//         "",
+//     ],
+//     fadeOut: true,
+//     typeSpeed: 50,
+//     backSpeed: 50,
+//     loop: true
+// })
