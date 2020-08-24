@@ -19,6 +19,8 @@
 
     --sideNavColor: #111;
     --sideNavLinkColor: #b8b3b3;
+
+    --contentColor: #000;
 }
 
 
@@ -307,6 +309,7 @@ h6{ font-size: 16px;}
 }
 #content{
     padding-bottom: 20px;
+    color: var(--contentColor)
 }
 
 .right{
